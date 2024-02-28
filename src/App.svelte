@@ -4,7 +4,7 @@
   import Summary from './pages/Summary.svelte'
   import {getQuestion} from './utils/QuestionRequest'
 
-  const urlParams = new URLSearchParams(window.location.search);
+  let urlParams = new URLSearchParams(window.location.search);
   const hasCode = urlParams.has('code');
 
   let code: string | null = hasCode ? urlParams.get('code') : null;
@@ -43,7 +43,10 @@
         {#await questionRequest}
             <p>...waiting</p>
         {:then questionData}
-            <Quiz {...questionData}/>
+            <Quiz
+                    code={code}
+                    {...questionData}
+            />
         {:catch error}
             <p style="color: red">{error.message}</p>
         {/await}
