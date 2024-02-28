@@ -2,7 +2,8 @@
 
 ddev exec npm run dev -- --host
 
-- View [here](http://172.23.0.11:5173/)
+- Prod [here](https://lpgamedevs.github.io/LearnSvelteQuiz/)
+- Dev [here](http://172.23.0.11:5173/)
 
 ### Resources:
 

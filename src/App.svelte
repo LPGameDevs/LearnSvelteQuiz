@@ -10,9 +10,6 @@
   let code: string | null = hasCode ? urlParams.get('code') : null;
   let isComplete: boolean = false;
 
-  // This message will only show if the code changes.
-  $: console.log(`the code is ${code}`);
-
   interface QuestionData {
     question: string;
     answers: ({     label: string;     isCorrect?: boolean;   })[];

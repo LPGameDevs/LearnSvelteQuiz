@@ -1,4 +1,5 @@
 export async function getQuestion() {
+  // @ts-ignore
   const sleep = ms => new Promise(
     resolve => setTimeout(resolve, ms));
 
