@@ -16,8 +16,6 @@
 
     <p>{@html message}</p>
 
-    {code}
-
     <input
             bind:value={code}
             placeholder="Enter Code"
